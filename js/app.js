@@ -20,11 +20,11 @@ angular.module('assessment', ['ui.router']).config(function($stateProvider, $url
             url: '/shop',
             templateUrl: './views/shop.html',
             controller: 'shopCtrl'
- //       })
- //       .state('product/:id' {
- //           url: '/product',
- //           templateUrl: './views/product-details.html',
- //           controller: 'productDetailsCtrl'
+        })
+        .state('product', {
+            url: '/product/:id',
+            templateUrl: './views/product-details.html',
+            controller: 'productDetailCtrl'
         });
         
 
