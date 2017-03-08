@@ -6,9 +6,9 @@ angular.module('assessment').controller('productDetailCtrl', function($scope, $s
         var promise = shopService.getProductbyId(id);
         promise.then(function(response){
             $scope.product = response.data;
-            console.log($scope.product);
+  //          console.log($scope.product);
         });
     };
-    console.log($stateParams);
+   // console.log($stateParams);
     $scope.getProduct($stateParams.id);
 });
